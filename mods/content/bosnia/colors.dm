@@ -1,0 +1,5 @@
+#define COMMS_COLOR_EXPLORER   "#c471a4"
+#define COMMS_COLOR_ENGINEER   "#c47704"
+#define COMMS_COLOR_SECURITY   "#b11d1d"
+#define COMMS_COLOR_COMMAND    "#cab919"
+#define COMMS_COLOR_DEFAULT    "#899b3a"
