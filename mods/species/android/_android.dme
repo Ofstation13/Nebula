@@ -1,0 +1,9 @@
+#ifndef MODPACK_ANDROID
+#define MODPACK_ANDROID
+#include "_android.dm"
+#include "species.dm"
+#include "species_bodytypes.dm"
+#include "markings.dm"
+//#include "limbs.dm"
+//#include "aspects.dm"
+#endif
