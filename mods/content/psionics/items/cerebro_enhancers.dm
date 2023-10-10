@@ -11,6 +11,7 @@
 	var/unboosted_rank = PSI_RANK_MASTER
 	var/max_boosted_faculties = 3
 	var/boosted_psipower = 120
+	var/boosted_psigen = 5 //OFSTATION EDIT
 
 /obj/item/clothing/head/helmet/space/psi_amp/lesser
 	name = "psionic amplifier"
@@ -23,7 +24,8 @@
 	max_boosted_faculties = 1
 	boosted_rank = PSI_RANK_MASTER
 	unboosted_rank = PSI_RANK_OPERANT
-	boosted_psipower = 50
+	boosted_psipower = 80
+	boosted_psigen = 3
 
 /obj/item/clothing/head/helmet/space/psi_amp/Initialize()
 	. = ..()
@@ -152,6 +154,7 @@
 		H.psi.max_stamina = boosted_psipower
 		H.psi.stamina = H.psi.max_stamina
 		H.psi.update(force = TRUE)
+		H.psi.cyberstam_regen = boosted_psigen
 
 	to_chat(H, SPAN_NOTICE("You experience a brief but powerful wave of deja vu as \the [src] finishes modifying your brain."))
 	verbs |= /obj/item/clothing/head/helmet/space/psi_amp/proc/deintegrate

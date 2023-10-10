@@ -9,9 +9,11 @@
 	var/cost_modifier = 1             // Multiplier for power use stamina costs.
 	var/stun = 0                      // Number of process ticks we are stunned for.
 	var/next_power_use = 0            // world.time minimum before next power use.
-	var/stamina = 50                  // Current psi pool.
+	var/stamina = 30                  // Current psi pool.
 	var/max_stamina = 50              // Max psi pool.
 	var/armor_cost = 0                // Amount of power to substract this tick from psi armor blocking damage.
+	var/traumastam_regen = 0 		  // OFSTATION EDIT: Boosts the rate of stam regen by how much pain and drugs you feel.
+	var/cyberstam_regen = 0			  // OFSTATION EDIT: Boosts the rate of stam regen via psi amps.
 
 	var/list/latencies                // List of all currently latent faculties.
 	var/list/ranks                    // Assoc list of psi faculties to current rank.

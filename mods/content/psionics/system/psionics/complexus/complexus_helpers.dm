@@ -101,5 +101,6 @@
 	ranks = base_ranks ? base_ranks.Copy() : null
 	max_stamina = initial(max_stamina)
 	stamina = min(stamina, max_stamina)
+	cyberstam_regen = initial(cyberstam_regen)
 	cancel()
 	update()
