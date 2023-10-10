@@ -1,0 +1,5 @@
+/decl/special_role/raider/equip(var/mob/living/carbon/human/player)
+	. = ..()
+	if(.)
+		var/obj/item/radio/uplink/U = new(get_turf(player), player.mind, DEFAULT_TELECRYSTAL_AMOUNT)
+		player.put_in_hands(U)

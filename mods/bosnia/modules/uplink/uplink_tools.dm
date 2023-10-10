@@ -1,7 +1,7 @@
 /********************
 * Devices and Tools *
 ********************/
-/datum/uplink_item/item/tools/ductape
+/datum/uplink_item/item/tools/handcuffs
 	name = "Handcuffs"
 	desc = "A pair of handcuffs. Useful for restraining people you don't hate enough to kill, but don't trust enough not to snitch."
 	item_cost = 1
